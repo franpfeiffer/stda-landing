@@ -7,19 +7,19 @@ export default function Home() {
       <section className="relative gradient-asma text-white pt-3 overflow-hidden">
         <div className="container mx-auto px-6 relative z-10">
           <div className="lg:flex lg:items-center">
-            <div className="lg:w-1/2 mb-10 lg:mb-0 ">
-              <h1 className="text-4xl md:text-5xl font-bold mb-4 lg:w-[27rem]">
-                Visitar al médico es la clave para mantener tu <span className="text-[#024A9E]">#AsmaBajoControl</span>
+            <div className="lg:w-1/2 mb-10 lg:mb-0 xl:pl-44">
+              <h1 className="text-4xl md:text-5xl font-bold mb-2 lg:w-[27rem]">
+                Visitar al médico es la clave para mantener tu <span className="text-[#024A9E] font-bold">#AsmaBajoControl</span>
               </h1>
-              <p className="font-bold text-3xl mb-6 lg:w-[27rem]">
+              <p className="font-bold text-3xl mb-3 lg:w-[27rem]">
                 ¿Sabías que el Asma no debería impedirte vivir tu vida al máximo?
               </p>
-              <p className="text-2xl mb-8 lg:w-[30rem]">
+              <p className="text-2xl mb-4 lg:w-[30rem]">
                 Si experimentás algún síntoma o tenés dudas, consultá con tu médico/a
               </p>
               <Link
                 to="/especialistas"
-                className="inline-block bg-blue-900 font-bold text-white px-6 py-3 rounded-lg hover:bg-blue-800 transition-colors"
+                className="inline-block bg-[#024A9E] font-bold text-white px-6 py-3 rounded-full hover:bg-[#8ACAC9] transition-colors"
               >
                 CONSULTÁ CON UN ESPECIALISTA
               </Link>
@@ -40,27 +40,29 @@ export default function Home() {
       <section className="py-16 flex items-center bg-gray-50">
         <div className="container mx-auto max-w-[60rem] min-h-[30rem] px-6">
           <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6">
+
             {/* Card 1 */}
-            <div className="bg-blue-900 text-white  rounded-lg overflow-hidden" style={{
+            <div className="bg-blue-900 text-white rounded-lg overflow-hidden relative" style={{
                 backgroundImage: "url('https://stda.com.ar/wp-content/uploads/2024/05/Cuadrado2.png')",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 aspectRatio: "16/9",
             }}>
-
-              <div className="p-6">
+              <div className="p-6 flex flex-col h-full">
                 <h3 className="text-xl font-semibold mb-4">Podría ser ASMA</h3>
-                <Link
-                  to="/asma#sintomasAsma"
-                  className="inline-flex items-end bg-[#3FA7F3] p-4 rounded-full text-white hover:underline mt-24"
-                >
-                  CONOCÉ LOS SINTOMAS
-                  <img
+                <div className="mt-auto">
+                  <Link
+                    to="/asma#sintomasAsma"
+                    className="inline-flex items-center bg-[#3FA7F3] p-4 rounded-full font-bold text-white hover:underline"
+                  >
+                    CONOCÉ LOS SINTOMAS
+                    <img
                       src="https://ext.same-assets.com/765921102/1998606599.svg"
                       alt=""
                       className="w-5 h-5 ml-2 text-white"
-                  />
-                </Link>
+                    />
+                  </Link>
+                </div>
               </div>
             </div>
 
@@ -71,19 +73,21 @@ export default function Home() {
                 backgroundPosition: "center",
                 aspectRatio: "16/9",
             }}>
-              <div className="p-6">
+              <div className="p-6 flex flex-col h-full">
                 <h3 className="text-xl font-semibold mb-4">¿Y si es EPOC?</h3>
-                <Link
-                  to="/epoc"
-                  className="inline-flex items-center bg-[#EF75CA] p-4 rounded-full text-white hover:underline mt-24"
-                >
-                  <img
-                    src="https://ext.same-assets.com/765921102/1367661487.svg"
-                    alt=""
-                    className="w-5 h-5 mr-2"
-                  />
+                <div className="mt-auto">
+                  <Link
+                    to="/epoc"
+                    className="inline-flex font-bold items-center bg-[#EF75CA] p-4 rounded-full text-white hover:underline"
+                  >
                   DESCUBRÍ MÁS
-                </Link>
+                    <img
+                      src="https://ext.same-assets.com/765921102/1367661487.svg"
+                      alt=""
+                      className="w-5 h-5 ml-2"
+                    />
+                  </Link>
+                </div>
               </div>
             </div>
 
@@ -94,24 +98,25 @@ export default function Home() {
                 backgroundPosition: "center",
                 aspectRatio: "16/9",
             }}>
-
-              <div className="p-6">
+              <div className="p-6 flex flex-col h-full">
                 <h3 className="text-xl font-semibold mb-4">
                   Con un diagnóstico adecuado, tener tu #AsmaBajoControl es posible.
                 </h3>
-                <a
-                  href="https://www.asthmacontroltest.com/es-ar/welcome/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-white bg-[#EF75CA] p-4 rounded-full hover:underline mt-20"
-                >
-                  <img
-                    src="https://ext.same-assets.com/765921102/2838098675.svg"
-                    alt=""
-                    className="w-5 h-5 mr-2"
-                  />
+                <div className="mt-auto">
+                  <a
+                    href="https://www.asthmacontroltest.com/es-ar/welcome/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center font-bold text-white bg-[#EF75CA] p-4 rounded-full hover:underline"
+                  >
                   HACÉ EL TEST AHORA
-                </a>
+                    <img
+                      src="https://ext.same-assets.com/765921102/2838098675.svg"
+                      alt=""
+                      className="w-5 h-5 ml-2"
+                    />
+                  </a>
+                </div>
               </div>
             </div>
 
@@ -122,22 +127,23 @@ export default function Home() {
                 backgroundPosition: "center",
                 aspectRatio: "16/9",
             }}>
-
-              <div className="p-6">
+              <div className="p-6 flex flex-col h-full">
                 <h3 className="text-xl font-semibold mb-4">
                   Encontrá tu<br />especialista
                 </h3>
-                <Link
-                  to="/especialistas"
-                  className="inline-flex items-center text-white bg-[#3FA7F3] p-4 rounded-full hover:underline mt-20"
-                >
-                  <img
-                    src="https://ext.same-assets.com/765921102/2018733539.svg"
-                    alt=""
-                    className="w-5 h-5 mr-2"
-                  />
+                <div className="mt-auto">
+                  <Link
+                    to="/especialistas"
+                    className="inline-flex font-bold items-center text-white bg-[#3FA7F3] p-4 rounded-full hover:underline"
+                  >
                   BUSCAR
-                </Link>
+                    <img
+                      src="https://ext.same-assets.com/765921102/2018733539.svg"
+                      alt=""
+                      className="w-5 h-5 ml-2"
+                    />
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -184,21 +190,21 @@ export default function Home() {
           <h2 className="text-3xl text-center font-semibold text-gray-800 mb-10">
             Iniciativa avalada por:
           </h2>
-          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+          <div className="grid grid-col-1 md:grid-cols-3 items-center justify-center gap-2 md:gap-2">
             <img
               src="https://ext.same-assets.com/765921102/1285552905.png"
               alt="Asociación Argentina de Alergia e Inmunología clínica"
-              className="h-16 md:h-40"
+              className="h-24 md:h-40"
             />
             <img
               src="https://ext.same-assets.com/765921102/135038844.png"
               alt="Sociedad de medicina interna de Buenos Aires"
-              className="h-16 md:h-40"
+              className="h-24 md:h-40"
             />
             <img
               src="https://ext.same-assets.com/765921102/62310028.png"
               alt="Asociación argentina de medicina respiratoria"
-              className="h-16 md:h-40"
+              className="h-20 md:h-40"
             />
           </div>
         </div>

@@ -50,7 +50,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="border-t border-blue-400 pt-4">
-          <p className="text-sm text-center lg:text-left">Copyright © 2024 GSK</p>
+          <p className="text-sm text-center lg:text-left">Copyright © 2025 GSK</p>
           <p className="text-xs mt-4 text-center lg:text-left">
             Para mayor información consulte a su médico. GSK Biopharma Argentina S.A. Av del Libertador 7202, Piso 4, CABA, Buenos Aires, Argentina. Para consultas sobre nuestros productos, consultas de calidad o reporte de eventos adversos puede comunicarse al 0800-222-4752. NP-AR-RS-WCNT-240001
           </p>

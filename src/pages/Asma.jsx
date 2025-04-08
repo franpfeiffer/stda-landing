@@ -66,7 +66,7 @@ export default function Asma() {
               <img
                 src="https://ext.same-assets.com/765921102/1703147609.png"
                 alt="Dibujo alérgeno"
-                className="w-34 h-34 mx-auto mb-4"
+                className="w-16 h-16 lg:w-34 lg:h-34 mx-auto mb-4"
               />
               <p>
                 Exposición a alérgenos, como los ácaros, la caspa de los animales, el polen y hongos.
@@ -76,7 +76,7 @@ export default function Asma() {
               <img
                 src="https://ext.same-assets.com/765921102/2808406191.png"
                 alt="Símbolo de prohibido fumar"
-                className="w-34 h-34 mx-auto mb-4"
+                className="w-16 h-16 lg:w-34 lg:h-34 mx-auto mb-4"
               />
               <p>
                 Exposición al humo de tabaco, contaminación o irritantes químicos.
@@ -86,7 +86,7 @@ export default function Asma() {
               <img
                 src="https://ext.same-assets.com/765921102/1763519441.png"
                 alt="Ejercicios físicos con frío"
-                className="w-34 h-34 mx-auto mb-4"
+                className="w-16 h-16 lg:w-34 lg:h-34 mx-auto mb-4"
               />
               <p>
                 El aire frío o ejercicio físico excesivo.
@@ -96,7 +96,7 @@ export default function Asma() {
               <img
                 src="https://ext.same-assets.com/765921102/1628680030.png"
                 alt="Estructura adn hereditaria"
-                className="w-34 h-34 mx-auto mb-4"
+                className="w-16 h-16 lg:w-34 lg:h-34 mx-auto mb-4"
               />
               <p>
                 Causas hereditarias, emociones extremas de enfado o miedo.
@@ -265,9 +265,9 @@ export default function Asma() {
         backgroundPosition: "center"
       }}
       >
-    <div className="bg-pink-400 font-bold rounded-md p-6 flex flex-row items-center max-w-3xl mx-auto" >
-      {/* Columna izquierda con imagen */}
-      <div className="w-1/3 flex justify-center">
+    <div className="bg-pink-400 font-bold rounded-md p-6 flex flex-col md:flex-row items-center max-w-3xl mx-auto" >
+      {/* Columna con imagen - ahora aparece primero en mobile */}
+      <div className="w-full md:w-1/3 flex justify-center mb-4 md:mb-0">
         <div className="relative">
           {/* Ilustración de persona */}
           <div className="relative">
@@ -294,8 +294,8 @@ export default function Asma() {
         </div>
       </div>
 
-      {/* Columna derecha con instrucciones */}
-      <div className="w-2/3 text-white pl-4">
+      {/* Columna con instrucciones - ahora aparece después de la imagen en mobile */}
+      <div className="w-full md:w-2/3 text-white md:pl-4">
         <ul className="space-y-6">
           <li className="flex items-start">
             <span className="mr-2 mt-1">

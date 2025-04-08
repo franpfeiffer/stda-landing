@@ -21,49 +21,51 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <div className="hidden lg:flex items-center space-x-2">
-          <div className="relative group">
+          <div className="relative group hover:cursor-pointer">
             <button
-              className="px-3 py-2 flex items-center text-base font-medium text-blue-900 hover:text-blue-700"
-              onClick={() => setAsmaDropdown(!asmaDropdown)}
+              className="px-3 py-2 flex items-center text-base font-bold text-blue-900 hover:text-blue-700 group-hover:text-blue-700"
             >
               ASMA
               <svg className="ml-1 h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
               </svg>
             </button>
-            <div className={`${asmaDropdown ? 'block' : 'hidden'} lg:absolute lg:left-0 lg:mt-2 lg:w-60 lg:shadow-lg lg:rounded-md lg:bg-white z-10`}>
-              <SmoothLink to="/asma" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">QUÉ ES EL ASMA?</SmoothLink>
-              <SmoothLink to="/asma#sintomasAsma" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">SÍNTOMAS</SmoothLink>
-              <SmoothLink to="/asma#desencadenantesAsma" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">DESENCADENANTES</SmoothLink>
-              <SmoothLink to="/asma#autocontrolAsma" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">AUTOCONTROL Y CUIDADO</SmoothLink>
-              <SmoothLink to="/asma#nocontrolAsma" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">#ASMABAJOCONTROL</SmoothLink>
-              <SmoothLink to="/asma#controlarAsma" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">CÓMO CONTROLARLO?</SmoothLink>
-              <SmoothLink to="/asma#senalesAsma" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">SEÑALES ASMA</SmoothLink>
+            <div className="hidden group-hover:block lg:absolute lg:left-0 lg:mt-0 lg:w-60 lg:shadow-lg lg:rounded-md lg:bg-white z-10 hover:block">
+              <div className="py-2">
+                <SmoothLink to="/asma" className="block px-4 py-2 text-sm text-[#024A9E] hover:bg-blue-100 font-bold">QUÉ ES EL ASMA?</SmoothLink>
+                <SmoothLink to="/asma#sintomasAsma" className="block px-4 py-2 text-sm text-[#024A9E] hover:bg-blue-100 font-bold">SÍNTOMAS</SmoothLink>
+                <SmoothLink to="/asma#desencadenantesAsma" className="block px-4 py-2 text-sm text-[#024A9E] hover:bg-blue-100 font-bold">DESENCADENANTES</SmoothLink>
+                <SmoothLink to="/asma#autocontrolAsma" className="block px-4 py-2 text-sm text-[#024A9E] hover:bg-blue-100 font-bold">AUTOCONTROL Y CUIDADO</SmoothLink>
+                <SmoothLink to="/asma#nocontrolAsma" className="block px-4 py-2 text-sm text-[#024A9E] hover:bg-blue-100 font-bold">#ASMABAJOCONTROL</SmoothLink>
+                <SmoothLink to="/asma#controlarAsma" className="block px-4 py-2 text-sm text-[#024A9E] hover:bg-blue-100 font-bold">CÓMO CONTROLARLO?</SmoothLink>
+                <SmoothLink to="/asma#senalesAsma" className="block px-4 py-2 text-sm text-[#024A9E] hover:bg-blue-100 font-bold">SEÑALES ASMA</SmoothLink>
+              </div>
             </div>
           </div>
 
-          <div className="relative group">
+          <div className="relative group hover:cursor-pointer">
             <button
-              className="px-3 py-2 flex items-center text-base font-medium text-blue-900 hover:text-blue-700"
-              onClick={() => setEpocDropdown(!epocDropdown)}
+              className="px-3 py-2 flex items-center text-base font-bold text-blue-900 hover:text-blue-700 group-hover:text-blue-700"
             >
               EPOC
               <svg className="ml-1 h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
               </svg>
             </button>
-            <div className={`${epocDropdown ? 'block' : 'hidden'} lg:absolute lg:left-0 lg:mt-2 lg:w-60 lg:shadow-lg lg:rounded-md lg:bg-white z-10`}>
-              <SmoothLink to="/epoc" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">SIGNIFICADO EPOC</SmoothLink>
-              <SmoothLink to="/epoc#evaluaEpoc" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">EVALUÁ TU EPOC</SmoothLink>
-              <SmoothLink to="/epoc#pulmonesEpoc" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">ESCUCHÁ A TUS PULMONES</SmoothLink>
+            <div className="hidden group-hover:block lg:absolute lg:left-0 lg:mt-0 lg:w-60 lg:shadow-lg lg:rounded-md lg:bg-white z-10 hover:block">
+              <div className="py-2">
+                <SmoothLink to="/epoc" className="block px-4 py-2 text-sm text-[#024A9E] hover:bg-blue-100 font-bold">SIGNIFICADO EPOC</SmoothLink>
+                <SmoothLink to="/epoc#evaluaEpoc" className="block px-4 py-2 text-sm text-[#024A9E] hover:bg-blue-100 font-bold">EVALUÁ TU EPOC</SmoothLink>
+                <SmoothLink to="/epoc#pulmonesEpoc" className="block px-4 py-2 text-sm text-[#024A9E] hover:bg-blue-100 font-bold">ESCUCHÁ A TUS PULMONES</SmoothLink>
+              </div>
             </div>
           </div>
 
-          <Link to="/especialistas" className="px-3 py-2 text-base font-medium text-blue-900 hover:text-blue-700">
+          <Link to="/especialistas" className="px-3 py-2 text-base font-bold text-blue-900 hover:text-blue-700">
             ESPECIALISTAS
           </Link>
 
-          <Link to="/conoce-abc" className="ml-2 bg-pink-400 text-white px-4 py-2 rounded-full hover:bg-pink-500 transition-colors">
+          <Link to="/conoce-abc" className="ml-2 bg-pink-400 font-bold text-white px-4 py-2 rounded-full hover:bg-pink-500 transition-colors">
             CONOCÉ ABC
           </Link>
         </div>
@@ -113,7 +115,7 @@ export default function Navbar() {
           <div className="flex flex-col space-y-2">
             <div>
               <button
-                className="w-full text-left px-3 py-2 text-base font-medium text-blue-900"
+                className="w-full text-left px-3 py-2 font-bold text-[#024A9E]"
                 onClick={() => setAsmaDropdown(!asmaDropdown)}
               >
                 ASMA
@@ -127,13 +129,13 @@ export default function Navbar() {
               </button>
               {asmaDropdown && (
                 <div className="pl-4 py-2 flex flex-col space-y-2">
-                  <SmoothLink to="/asma" className="text-sm text-gray-700">QUÉ ES EL ASMA?</SmoothLink>
-                  <SmoothLink to="/asma#sintomasAsma" className="text-sm text-gray-700">SÍNTOMAS</SmoothLink>
-                  <SmoothLink to="/asma#desencadenantesAsma" className="text-sm text-gray-700">DESENCADENANTES</SmoothLink>
-                  <SmoothLink to="/asma#autocontrolAsma" className="text-sm text-gray-700">AUTOCONTROL Y CUIDADO</SmoothLink>
-                  <SmoothLink to="/asma#nocontrolAsma" className="text-sm text-gray-700">#ASMABAJOCONTROL</SmoothLink>
-                  <SmoothLink to="/asma#controlarAsma" className="text-sm text-gray-700">CÓMO CONTROLARLO?</SmoothLink>
-                  <SmoothLink to="/asma#senalesAsma" className="text-sm text-gray-700">SEÑALES ASMA</SmoothLink>
+                  <SmoothLink to="/asma" className="text-sm text-[#024A9E]">QUÉ ES EL ASMA?</SmoothLink>
+                  <SmoothLink to="/asma#sintomasAsma" className="text-sm text-[#024A9E]">SÍNTOMAS</SmoothLink>
+                  <SmoothLink to="/asma#desencadenantesAsma" className="text-sm text-[#024A9E]">DESENCADENANTES</SmoothLink>
+                  <SmoothLink to="/asma#autocontrolAsma" className="text-sm text-[#024A9E]">AUTOCONTROL Y CUIDADO</SmoothLink>
+                  <SmoothLink to="/asma#nocontrolAsma" className="text-sm text-[#024A9E]">#ASMABAJOCONTROL</SmoothLink>
+                  <SmoothLink to="/asma#controlarAsma" className="text-sm text-[#024A9E]">CÓMO CONTROLARLO?</SmoothLink>
+                  <SmoothLink to="/asma#senalesAsma" className="font-bold text-sm text-[#024A9E]">SEÑALES ASMA</SmoothLink>
                 </div>
               )}
             </div>
@@ -154,9 +156,9 @@ export default function Navbar() {
               </button>
               {epocDropdown && (
                 <div className="pl-4 py-2 flex flex-col space-y-2">
-                  <SmoothLink to="/epoc" className="text-sm text-gray-700">SIGNIFICADO EPOC</SmoothLink>
-                  <SmoothLink to="/epoc#evaluaEpoc" className="text-sm text-gray-700">EVALUÁ TU EPOC</SmoothLink>
-                  <SmoothLink to="/epoc#pulmonesEpoc" className="text-sm text-gray-700">ESCUCHÁ A TUS PULMONES</SmoothLink>
+                  <SmoothLink to="/epoc" className="text-sm text-[#024A9E]">SIGNIFICADO EPOC</SmoothLink>
+                  <SmoothLink to="/epoc#evaluaEpoc" className="text-sm text-[#024A9E]">EVALUÁ TU EPOC</SmoothLink>
+                  <SmoothLink to="/epoc#pulmonesEpoc" className="text-sm text-[#024A9E]">ESCUCHÁ A TUS PULMONES</SmoothLink>
                 </div>
               )}
             </div>
