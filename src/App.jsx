@@ -1,22 +1,19 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
-// Layouts
 import Layout from './components/Layout';
-
-// Pages
+import Preloader from './components/Preloader';
 import Home from './pages/Home';
 import Asma from './pages/Asma';
 import Epoc from './pages/Epoc';
 import Especialistas from './pages/Especialistas';
 import ConoceAbc from './pages/ConoceAbc';
 import NotFound from './pages/NotFound';
-
-// Google Fonts - Roboto
 import './index.css';
 
 function App() {
   return (
     <Router>
+      <Preloader />
+
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />

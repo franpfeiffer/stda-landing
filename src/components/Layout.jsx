@@ -7,14 +7,10 @@ import { handleHashScroll } from '../utils/scrollUtils';
 export default function Layout() {
   const location = useLocation();
 
-  // Handle smooth scrolling when the location changes
   useEffect(() => {
-    // Check if there's a hash in the URL
     if (location.hash) {
-      // Scroll to the element with the hash
       handleHashScroll(location.hash);
     } else {
-      // If no hash, scroll to top
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   }, [location]);
