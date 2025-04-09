@@ -29,7 +29,7 @@ export default function Especialistas() {
                   href="https://www.aamr.org.ar/comunidad/busque_neumonologo.php"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center bg-blue-900 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-800 transition-colors"
+                  className="inline-flex items-center bg-blue-900 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-800 transition-colors"
                 >
                   BUSCAR
                   <img
@@ -52,7 +52,7 @@ export default function Especialistas() {
                   href="https://www.alergia.org.ar/index.php/ubique-un-alergologo"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center bg-white text-blue-800 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors"
+                  className="inline-flex items-center bg-white text-blue-800 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors"
                 >
                   BUSCAR
                   <img
