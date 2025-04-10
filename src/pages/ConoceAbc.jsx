@@ -22,7 +22,7 @@ export default function ConoceAbc() {
               href="https://www.asthmacontroltest.com/es-ar/welcome/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-[#EF75CA] text-white px-6 py-3 rounded-full font-medium hover:bg-gray-100 transition-colors mt-6"
+              className="inline-block bg-[#EF75CA] text-white px-6 py-3 rounded-full font-bold hover:bg-gray-100 transition-colors mt-6"
             >
               HACÉ EL TEST AHORA
             </a>
@@ -154,7 +154,7 @@ export default function ConoceAbc() {
             href="https://www.asthmacontroltest.com/es-ar/welcome/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-pink-500 text-white px-6 py-3 rounded-full font-medium hover:bg-pink-600 transition-colors"
+            className="inline-block bg-pink-500 text-white px-6 py-3 rounded-full font-bold hover:bg-pink-600 transition-colors"
           >
             HACÉ EL TEST AHORA
           </a>
