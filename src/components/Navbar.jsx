@@ -22,16 +22,15 @@ export default function Navbar() {
                 {/* Desktop Menu */}
                 <div className="hidden lg:flex items-center space-x-2">
                     <div className="relative group hover:cursor-pointer">
-                        <button
+                        <Link
+                            to="/asma"
                             className="px-3 py-2 flex items-center text-base font-bold text-blue-900 hover:text-blue-700 group-hover:text-blue-700"
                         >
-                        <a href="/asma">
                             ASMA
-                        </a>
                             <svg className="ml-1 h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                             </svg>
-                        </button>
+                        </Link>
                         <div className="hidden group-hover:block lg:absolute lg:left-0 lg:mt-0 lg:w-60 lg:shadow-lg lg:rounded-md lg:bg-white z-10 hover:block">
                             <div className="py-2">
                                 <SmoothLink to="/asma" className="block px-4 py-2 text-sm text-[#024A9E] hover:bg-blue-100 font-bold">QUÉ ES EL ASMA?</SmoothLink>
@@ -46,16 +45,15 @@ export default function Navbar() {
                     </div>
 
                     <div className="relative group hover:cursor-pointer">
-                        <button
+                        <Link
+                            to="/epoc"
                             className="px-3 py-2 flex items-center text-base font-bold text-blue-900 hover:text-blue-700 group-hover:text-blue-700"
                         >
-                        <a href="/epoc">
                             EPOC
-                        </a>
                             <svg className="ml-1 h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                             </svg>
-                        </button>
+                        </Link>
                         <div className="hidden group-hover:block lg:absolute lg:left-0 lg:mt-0 lg:w-60 lg:shadow-lg lg:rounded-md lg:bg-white z-10 hover:block">
                             <div className="py-2">
                                 <SmoothLink to="/epoc" className="block px-4 py-2 text-sm text-[#024A9E] hover:bg-blue-100 font-bold">SIGNIFICADO EPOC</SmoothLink>
@@ -118,8 +116,9 @@ export default function Navbar() {
                 <div className="lg:hidden py-2 px-4">
                     <div className="flex flex-col space-y-2">
                         <div>
-                            <button
-                                className="w-full text-left px-3 py-2 font-bold text-[#024A9E]"
+                            <Link
+                                to="/asma"
+                                className="w-full text-left px-3 py-2 font-bold text-[#024A9E] block"
                                 onClick={() => setAsmaDropdown(!asmaDropdown)}
                             >
                                 ASMA
@@ -130,7 +129,7 @@ export default function Navbar() {
                                 >
                                     <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                 </svg>
-                            </button>
+                            </Link>
                             {asmaDropdown && (
                                 <div className="pl-4 py-2 flex flex-col space-y-2">
                                     <SmoothLink to="/asma" className="text-sm text-[#024A9E]">QUÉ ES EL ASMA?</SmoothLink>
@@ -145,8 +144,9 @@ export default function Navbar() {
                         </div>
 
                         <div>
-                            <button
-                                className="w-full text-left px-3 py-2 text-base font-bold text-blue-900"
+                            <Link
+                                to="/epoc"
+                                className="w-full text-left px-3 py-2 text-base font-bold text-blue-900 block"
                                 onClick={() => setEpocDropdown(!epocDropdown)}
                             >
                                 EPOC
@@ -157,7 +157,7 @@ export default function Navbar() {
                                 >
                                     <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                 </svg>
-                            </button>
+                            </Link>
                             {epocDropdown && (
                                 <div className="pl-4 py-2 flex flex-col space-y-2">
                                     <SmoothLink to="/epoc" className="text-sm text-[#024A9E]">SIGNIFICADO EPOC</SmoothLink>
